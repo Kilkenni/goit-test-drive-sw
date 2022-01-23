@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+:root {
+  /* css variables */
+  --color-main: #ffffff;
+  --color-accent: #ffc700;
+  --color-bg_main: #060803;
+  --color-bg_secondary: #222527;
+  --color-overlay: rgba(255, 255, 255, 0.4);
+
+  --color-main--light: #15141d;
+  --color-accent--light: #4b526a;
+  --color-bg_main--light: #ffffff;
+  --color-bg_secondary--light: #ebebeb;
+  --color-overlay--light: rgba(21, 20, 29, 0.4);
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.textPlain {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: var(--color-main);
+}
+
+.sectionPrimary {
+  height: 100%;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 60px;
+
+  background-color: var(--color-bg_main);
+  /*background-image: url(../img/space.jpg);
+  background-size: cover;*/
+}
+
+.container-section {
+  width: 1170px;
+  height: 700px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 95px;
+  padding-right: 95px;
+
+  background-image: url(../img/space.jpg);
+  background-size: cover;
+}
+
+.captionSub {
+  margin-bottom: 16px;
+}
+
+.captionMain {
+  margin-bottom: 24px;
+
+  font-style: italic;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+
+  color: var(--color-accent);
+}
+
+.listFeatures {
+  margin-bottom: 24px;
+}
+
+.listFeatures-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.captionSmall {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: var(--color-accent);
+}
