@@ -114,13 +114,11 @@ body {
   color: var(--color-main);
 }
 
-.captionSub {
+.sectionPrimary-captionSub {
   margin-bottom: 16px;
 }
 
 .captionMain {
-  margin-bottom: 24px;
-
   font-style: italic;
   font-weight: bold;
   font-size: 46px;
@@ -128,6 +126,10 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--color-accent);
+}
+
+.sectionPrimary-captionMain {
+  margin-bottom: 24px;
 }
 
 .listFeatures {
@@ -241,4 +243,58 @@ body {
   line-height: 150%;
 
   color: var(--color-main);
+}
+
+.sectionCodex {
+  padding: 186px 0;
+
+  background-color: var(--color-bg_main);
+  background-image: url(../img/space.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.sectionCodex .container {
+  flex-direction: row;
+}
+
+.sectionCodex-block {
+  width: calc(50% - 24px / 2);
+}
+
+.sectionCodex-block:not(:last-child) {
+  margin-right: 24px;
+}
+
+.sectionCodex-caption {
+  margin-bottom: calc(32px - 4px);
+}
+
+.sectionCodex-text {
+  margin-bottom: calc(60px - 4px);
+}
+
+.sectionCodex-text.textPlain {
+  line-height: calc(150% + 4px * 2);
+}
+
+.footer {
+  padding: 60px 0;
+
+  background-color: var(--color-bg_secondary);
+}
+
+.footer .container {
+  align-items: center;
+}
+
+.footer .textPlain {
+  width: 740px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer-icon {
+  height: 60px;
+  width: 60px;
 }
