@@ -18,10 +18,27 @@
   --color-overlay--light: rgba(21, 20, 29, 0.4);
 }
 
+html,
 body {
   height: 100%;
   width: 100%;
+}
+
+body {
   font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  /* width: 1170px; */
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 95px;
+  padding-right: 95px;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .textPlain {
@@ -36,26 +53,48 @@ body {
 .sectionPrimary {
   height: 100%;
   width: 100%;
-  padding-top: 40px;
-  padding-bottom: 60px;
 
-  background-color: var(--color-bg_main);
-  /*background-image: url(../img/space.jpg);
-  background-size: cover;*/
+  /* background-color: var(--color-bg_main); */
+  background-image: url(../img/space.jpg);
+  background-size: cover;
 }
 
+.sectionPrimary-Vader {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* width: 1170px; */
+/* height: 700px; */
+
 .container-section {
-  width: 1170px;
-  height: 700px;
+  /* position: relative; */
+  /* height: 100%; */
 
   margin-left: auto;
   margin-right: auto;
 
+  padding-top: 40px;
+  padding-bottom: 60px;
   padding-left: 95px;
   padding-right: 95px;
+}
 
-  background-image: url(../img/space.jpg);
-  background-size: cover;
+.container-section--sectionPrimary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  height: 100%;
+}
+
+.sectionPrimary-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .captionSub {
@@ -75,11 +114,37 @@ body {
 }
 
 .listFeatures {
-  margin-bottom: 24px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+.listFeatures-item {
+  color: var(--color-accent);
+  list-style: disc;
 }
 
 .listFeatures-item:not(:last-child) {
   margin-bottom: 8px;
+}
+
+.button-callToAction {
+  border: 0;
+  outline: 0;
+  padding: 16px 32px;
+  /* margin-bottom: 104px; */
+
+  border-radius: 38px;
+  background-color: var(--color-accent);
+
+  cursor: pointer;
+
+  /* font-family: "Montserrat", sans-serif;; */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: var(--color-bg_main);
 }
 
 .captionSmall {
