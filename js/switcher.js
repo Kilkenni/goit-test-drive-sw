@@ -5,6 +5,7 @@ const darkTheme = {
     bg_sec: '#222527',
     // overlay: 'rgb(239 236 236 / 90%)', 
     overlay: 'rgb(255, 255, 255, 0.4)',
+    motto: "#ffffff",
 };
 
 const lightTheme = {
@@ -14,6 +15,7 @@ const lightTheme = {
     bg_sec: '#EBEBEB',
     // overlay: 'rgb(21 20 29 / 90%)', 
     overlay: 'rgba(21, 20, 29, 0.4)',
+    motto: "#7A7962",
 }
 
 //   --color-main--light: #15141d;
@@ -21,6 +23,7 @@ const lightTheme = {
 //   --color-bg_main--light: #ffffff;
 //   --color-bg_secondary--light: #ebebeb;
 //   --color-overlay--light: rgba(21, 20, 29, 0.4);
+//   --color-motto: #ffffff;
 
 let currentTheme = 'dark';
 
@@ -37,6 +40,7 @@ function switchTheme () {
         element.style.setProperty('--color-bg_main', lightTheme.bg_main);
         element.style.setProperty('--color-bg_secondary', lightTheme.bg_sec);
         element.style.setProperty('--color-overlay', lightTheme.overlay);
+        element.style.setProperty('--color-motto', lightTheme.motto);
 
         aboutMeContainer.classList.add('sectionPrimary--light');
         factsContainer.classList.add('sectionCodex--light');
@@ -49,6 +53,7 @@ function switchTheme () {
         element.style.setProperty('--color-bg_main', darkTheme.bg_main);
         element.style.setProperty('--color-bg_secondary', darkTheme.bg_sec);
         element.style.setProperty('--color-overlay', darkTheme.overlay);
+        element.style.setProperty('--color-motto', darkTheme.motto);
 
         aboutMeContainer.classList.remove('sectionPrimary--light');
         factsContainer.classList.remove('sectionCodex--light');

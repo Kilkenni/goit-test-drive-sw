@@ -12,6 +12,7 @@ function closeModals(e) {
 
     modalForm.classList.remove(MODAL_ACTIVE_CLASS);
     modalSuccess.classList.remove(MODAL_ACTIVE_CLASS);
+    document.body.classList.remove("body-scroll-lock");
 }
 
 function openSuccessModal() {
@@ -20,6 +21,8 @@ function openSuccessModal() {
 
     const modalFormClose = document.querySelector('#modal-success-close');
     modalFormClose.addEventListener('click', closeModals);
+    
+    document.body.classList.add("body-scroll-lock");
 };
 
 
@@ -44,4 +47,6 @@ callFormBtn.addEventListener('click', function () {
     modalFormClose.addEventListener('click', closeModals);
 
     form.addEventListener('submit', sendUserInfo);
+    
+    document.body.classList.add("body-scroll-lock");
 });

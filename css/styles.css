@@ -16,6 +16,9 @@
   --color-bg_main--light: #ffffff;
   --color-bg_secondary--light: #ebebeb;
   --color-overlay--light: rgba(21, 20, 29, 0.4);
+
+  --color-motto: #ffffff;
+  --color-motto--light: #7a7962;
 }
 
 html,
@@ -26,6 +29,10 @@ body {
 
 body {
   font-family: "Montserrat", sans-serif;
+}
+
+.body-scroll-lock {
+  overflow: hidden;
 }
 
 .sectionPrimary {
@@ -168,6 +175,10 @@ body {
   line-height: 150%;
 
   color: var(--color-bg_main);
+}
+
+.textPlain--motto {
+  color: var(--color-motto);
 }
 
 .sectionPrimary-social {
